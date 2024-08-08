@@ -25,8 +25,9 @@ public class JwtAuthFilter extends OncePerRequestFilter {
     private final TokenProvider tokenProvider;
 
     private static final String[] excludePath = {
-            "/swagger", "/swagger-ui.html", "/swagger-ui/**", "/api-docs", "/api-docs/**", "/v3/api-docs/**", "/v3/api-docs/swagger-config",
-            "/api/auth/login/google", "/v3/api-docs",
+            "/swagger", "/swagger-ui.html", "/swagger-ui/**", "/api-docs", "/api-docs/**", "/v3/api-docs/**",
+            "/v3/api-docs/swagger-config", "/v3/api-docs",
+            "/api/auth/oauth2/login/oauth2/code/google", "/oauth2/authorization/google",
             "/health", "/favicon.ico"
     };
 

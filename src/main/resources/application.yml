@@ -16,7 +16,7 @@ spring:
           min-idle: 2
 
 jwt:
-  secret-key: REDACTED
+  secret-key: ${JWT_SECRET_KEY}
   token-valid-time:  172800 # 2일
   refresh-valid-time: 1209600 # 2주
 

@@ -5,8 +5,8 @@ spring:
         registration:
           google:
             client-name: google
-            client-id: REDACTED
-            client-secret: REDACTED
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
             redirect-uri: https://www.blink-bookmarklink.com/login/oauth2/code/google
             authorization-grant-type: authorization_code
             scope:
